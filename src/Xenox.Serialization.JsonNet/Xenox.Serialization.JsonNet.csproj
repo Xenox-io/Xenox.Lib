@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Version>1.0.5</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="11.0.1" />
+    <PackageReference Include="Xenox.Serialization" Version="1.0.3" />
+  </ItemGroup>
+
+  <Target Name="CopyNuGetPackage" AfterTargets="Pack">
+    <Exec Command="xcopy /Y &quot;$(TargetDir)..\*.nupkg&quot; &quot;%USERPROFILE%\.nuget.local&quot;" />
+  </Target>
+
+</Project>
