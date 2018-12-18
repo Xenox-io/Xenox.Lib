@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using Microsoft.Extensions.DependencyInjection;
 using Xenox.Event;
+using Xenox.Event.Handler;
 
 namespace Xenox.Host.Providers.DependencyInjection {
 	public class EventHandlerProvider : IEventHandlerProvider {
@@ -16,8 +17,8 @@ namespace Xenox.Host.Providers.DependencyInjection {
 			return _serviceProvider.GetServices<IEventHandler<TEvent>>();
 		}
 
-		public IEnumerable<object> GetEventHandlers(Type domainEventType) {
-			Type handlerType = EventHandlerOpenType.MakeGenericType(domainEventType);
+		public IEnumerable<object> GetEventHandlers(Type eventType) {
+			Type handlerType = EventHandlerOpenType.MakeGenericType(eventType);
 			return _serviceProvider.GetServices(handlerType);
 		}
 	}

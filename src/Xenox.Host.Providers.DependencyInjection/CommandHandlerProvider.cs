@@ -1,6 +1,7 @@
 ﻿using System;
 using Microsoft.Extensions.DependencyInjection;
 using Xenox.Command;
+using Xenox.Command.Handler;
 
 namespace Xenox.Host.Providers.DependencyInjection {
 	public class CommandHandlerProvider : ICommandHandlerProvider {

@@ -21,7 +21,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Xenox.Encryption.SuperBasic
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Xenox.Domain", "src\Xenox.Domain\Xenox.Domain.csproj", "{308B3D51-807E-44F8-861A-2B0DE3177D0D}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Xenox.AppService", "src\Xenox.AppService\Xenox.AppService.csproj", "{A50526EA-A48A-4AC9-AB70-45A47D630FE6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Xenox.Persistence.AggregateRootStore", "src\Xenox.Persistence.AggregateRootStore\Xenox.Persistence.AggregateRootStore.csproj", "{A50526EA-A48A-4AC9-AB70-45A47D630FE6}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Xenox.Host.Providers", "src\Xenox.Host.Providers\Xenox.Host.Providers.csproj", "{0729CD9B-B00F-4DED-BF22-6D00A62089F8}"
 EndProject
@@ -46,6 +46,18 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Xenox.Pipeline", "src\Xenox.Pipeline\Xenox.Pipeline.csproj", "{65FA55A9-0D33-46F7-87B5-9906838AB591}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Xenox.DependencyInjection.Module", "src\Xenox.DependencyInjection.Module\Xenox.DependencyInjection.Module.csproj", "{4FBE2AA9-340B-45A9-AC44-6155BE693BE9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Xenox.Command.Handler", "src\Xenox.Command.Handler\Xenox.Command.Handler.csproj", "{1E8704D0-A631-48F7-BE45-D237F2B8DB6C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Xenox.Command.Info", "src\Xenox.Command.Info\Xenox.Command.Info.csproj", "{145B66E4-643F-4392-BAE8-9DECD693542D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Xenox.Event.Handler", "src\Xenox.Event.Handler\Xenox.Event.Handler.csproj", "{737A01F5-75EC-4AB1-9846-D4AB6950C996}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xenox.Query.Handler", "src\Xenox.Query.Handler\Xenox.Query.Handler.csproj", "{91B6F48D-982C-4FB8-8C69-ECAC1A685941}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xenox.Event.Publisher", "src\Xenox.Event.Publisher\Xenox.Event.Publisher.csproj", "{A9904433-BA8C-4E4E-9C5F-79ADDF00E251}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xenox.Query.Paging", "src\Xenox.Query.Paging\Xenox.Query.Paging.csproj", "{472912B3-9D35-4886-BFD3-50B7FD9086D3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -141,6 +153,30 @@ Global
 		{4FBE2AA9-340B-45A9-AC44-6155BE693BE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4FBE2AA9-340B-45A9-AC44-6155BE693BE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4FBE2AA9-340B-45A9-AC44-6155BE693BE9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1E8704D0-A631-48F7-BE45-D237F2B8DB6C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E8704D0-A631-48F7-BE45-D237F2B8DB6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E8704D0-A631-48F7-BE45-D237F2B8DB6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E8704D0-A631-48F7-BE45-D237F2B8DB6C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{145B66E4-643F-4392-BAE8-9DECD693542D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{145B66E4-643F-4392-BAE8-9DECD693542D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{145B66E4-643F-4392-BAE8-9DECD693542D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{145B66E4-643F-4392-BAE8-9DECD693542D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{737A01F5-75EC-4AB1-9846-D4AB6950C996}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{737A01F5-75EC-4AB1-9846-D4AB6950C996}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{737A01F5-75EC-4AB1-9846-D4AB6950C996}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{737A01F5-75EC-4AB1-9846-D4AB6950C996}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91B6F48D-982C-4FB8-8C69-ECAC1A685941}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91B6F48D-982C-4FB8-8C69-ECAC1A685941}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91B6F48D-982C-4FB8-8C69-ECAC1A685941}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91B6F48D-982C-4FB8-8C69-ECAC1A685941}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A9904433-BA8C-4E4E-9C5F-79ADDF00E251}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9904433-BA8C-4E4E-9C5F-79ADDF00E251}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9904433-BA8C-4E4E-9C5F-79ADDF00E251}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9904433-BA8C-4E4E-9C5F-79ADDF00E251}.Release|Any CPU.Build.0 = Release|Any CPU
+		{472912B3-9D35-4886-BFD3-50B7FD9086D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{472912B3-9D35-4886-BFD3-50B7FD9086D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{472912B3-9D35-4886-BFD3-50B7FD9086D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{472912B3-9D35-4886-BFD3-50B7FD9086D3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

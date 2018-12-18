@@ -4,7 +4,7 @@
     <TargetFramework>netcoreapp2.0</TargetFramework>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <AllowedOutputExtensionsInPackageBuildOutputFolder>$(AllowedOutputExtensionsInPackageBuildOutputFolder);.pdb</AllowedOutputExtensionsInPackageBuildOutputFolder>
-    <Version>1.0.9</Version>
+    <Version>1.0.12</Version>
   </PropertyGroup>
 
   <Target Name="CopyNuGetPackage" AfterTargets="Pack">
@@ -12,9 +12,10 @@
   </Target>
 
   <ItemGroup>
-    <PackageReference Include="Xenox.Command" Version="1.0.4" />
+    <PackageReference Include="Xenox.Command" Version="1.0.5" />
+    <PackageReference Include="Xenox.Command.Info" Version="1.0.1" />
     <PackageReference Include="Xenox.Messaging" Version="1.0.8" />
-    <PackageReference Include="Xenox.Reflection" Version="1.0.2" />
+    <PackageReference Include="Xenox.Reflection" Version="1.0.5" />
     <PackageReference Include="Xenox.Serialization" Version="1.0.3" />
   </ItemGroup>
 

@@ -1,5 +1,6 @@
 ﻿using System;
 using Xenox.Command;
+using Xenox.Command.Info;
 using Xenox.Messaging;
 using Xenox.Reflection;
 

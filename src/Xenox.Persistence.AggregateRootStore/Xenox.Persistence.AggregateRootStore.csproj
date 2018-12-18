@@ -11,7 +11,7 @@
   </Target>
 
   <ItemGroup>
-    <PackageReference Include="Xenox.Domain" Version="1.0.0" />
+    <PackageReference Include="Xenox.Domain" Version="1.0.1" />
   </ItemGroup>
 
 </Project>

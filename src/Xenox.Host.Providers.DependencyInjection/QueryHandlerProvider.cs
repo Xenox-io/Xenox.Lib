@@ -1,6 +1,7 @@
 ﻿using System;
 using Microsoft.Extensions.DependencyInjection;
 using Xenox.Query;
+using Xenox.Query.Handler;
 
 namespace Xenox.Host.Providers.DependencyInjection {
 	public class QueryHandlerProvider : IQueryHandlerProvider {
