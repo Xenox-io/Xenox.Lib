@@ -23,15 +23,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Xenox.Domain", "src\Xenox.D
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Xenox.Persistence.AggregateRootStore", "src\Xenox.Persistence.AggregateRootStore\Xenox.Persistence.AggregateRootStore.csproj", "{A50526EA-A48A-4AC9-AB70-45A47D630FE6}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Xenox.Host.Providers", "src\Xenox.Host.Providers\Xenox.Host.Providers.csproj", "{0729CD9B-B00F-4DED-BF22-6D00A62089F8}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Xenox.Command", "src\Xenox.Command\Xenox.Command.csproj", "{6C864B3D-4555-44EE-AB63-FBBE80B341DD}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Xenox.Event", "src\Xenox.Event\Xenox.Event.csproj", "{FFE29363-2A16-4CF4-8F5A-6CCBA888CB7D}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Xenox.Query", "src\Xenox.Query\Xenox.Query.csproj", "{294FC447-004A-4B56-A9BC-C43745A28245}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Xenox.Host.Providers.DependencyInjection", "src\Xenox.Host.Providers.DependencyInjection\Xenox.Host.Providers.DependencyInjection.csproj", "{C0AD9C99-048A-41EC-8004-63F7F5B56094}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Xenox.Command.Dispatcher", "src\Xenox.Command.Dispatcher\Xenox.Command.Dispatcher.csproj", "{47F0F0E2-2FC0-4363-9664-4E4D4166030E}"
 EndProject
@@ -41,23 +37,41 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Xenox.Reflection", "src\Xen
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Xenox.Messaging", "src\Xenox.Messaging\Xenox.Messaging.csproj", "{3A419984-EC16-48AF-806B-65322CD11F10}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Xenox.Serialization.CommandMessage", "src\Xenox.Serialization.CommandMessage\Xenox.Serialization.CommandMessage.csproj", "{711A2B21-8638-4802-BD90-A9FD3FA7A7D7}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Xenox.Pipeline", "src\Xenox.Pipeline\Xenox.Pipeline.csproj", "{65FA55A9-0D33-46F7-87B5-9906838AB591}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Xenox.DependencyInjection.Module", "src\Xenox.DependencyInjection.Module\Xenox.DependencyInjection.Module.csproj", "{4FBE2AA9-340B-45A9-AC44-6155BE693BE9}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Xenox.Command.Handler", "src\Xenox.Command.Handler\Xenox.Command.Handler.csproj", "{1E8704D0-A631-48F7-BE45-D237F2B8DB6C}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Xenox.Command.Info", "src\Xenox.Command.Info\Xenox.Command.Info.csproj", "{145B66E4-643F-4392-BAE8-9DECD693542D}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Xenox.Event.Handler", "src\Xenox.Event.Handler\Xenox.Event.Handler.csproj", "{737A01F5-75EC-4AB1-9846-D4AB6950C996}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xenox.Query.Handler", "src\Xenox.Query.Handler\Xenox.Query.Handler.csproj", "{91B6F48D-982C-4FB8-8C69-ECAC1A685941}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Xenox.Query.Handler", "src\Xenox.Query.Handler\Xenox.Query.Handler.csproj", "{91B6F48D-982C-4FB8-8C69-ECAC1A685941}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xenox.Event.Publisher", "src\Xenox.Event.Publisher\Xenox.Event.Publisher.csproj", "{A9904433-BA8C-4E4E-9C5F-79ADDF00E251}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Xenox.Event.Publisher", "src\Xenox.Event.Publisher\Xenox.Event.Publisher.csproj", "{A9904433-BA8C-4E4E-9C5F-79ADDF00E251}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xenox.Query.Paging", "src\Xenox.Query.Paging\Xenox.Query.Paging.csproj", "{472912B3-9D35-4886-BFD3-50B7FD9086D3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Xenox.Query.Paging", "src\Xenox.Query.Paging\Xenox.Query.Paging.csproj", "{472912B3-9D35-4886-BFD3-50B7FD9086D3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Xenox.Command.Messaging.Processor", "src\Xenox.Command.Messaging.Processor\Xenox.Command.Messaging.Processor.csproj", "{14E61E51-337F-4547-A71A-50ADCB879DCE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Xenox.Command.Serialization", "src\Xenox.Command.Serialization\Xenox.Command.Serialization.csproj", "{8478B7F9-F6B3-4D1D-BAAC-7BEB5A230FD2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Xenox.Command.Messaging.Serialization", "src\Xenox.Command.Messaging.Serialization\Xenox.Command.Messaging.Serialization.csproj", "{66B48A1B-43F8-48E7-A43C-054402A28EA3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Xenox.Type.Provider", "src\Xenox.Type.Provider\Xenox.Type.Provider.csproj", "{5A2C3327-CC3F-4099-87A1-4C107504A997}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Xenox.Event.Handler.Provider", "src\Xenox.Event.Handler.Provider\Xenox.Event.Handler.Provider.csproj", "{84C9972B-BC94-461B-8BE9-E10954335123}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Xenox.Command.Handler.Provider", "src\Xenox.Command.Handler.Provider\Xenox.Command.Handler.Provider.csproj", "{D0D1AA48-4571-4092-B853-35055AEAEDB3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Xenox.Query.Handler.Provider", "src\Xenox.Query.Handler.Provider\Xenox.Query.Handler.Provider.csproj", "{C0D149C9-AA34-4C51-A87D-42A9BCCFD5D8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Xenox.Command.Handler.Provider.DependencyInjection", "src\Xenox.Command.Handler.Provider.DependencyInjection\Xenox.Command.Handler.Provider.DependencyInjection.csproj", "{EF69E5B2-DCDB-406B-A885-BC9704CC2406}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Xenox.Event.Handler.Provider.DependencyInjection", "src\Xenox.Event.Handler.Provider.DependencyInjection\Xenox.Event.Handler.Provider.DependencyInjection.csproj", "{CC533DAD-1CA9-4C7B-AEF3-780227E30ED0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Xenox.Query.Handler.Provider.DependencyInjection", "src\Xenox.Query.Handler.Provider.DependencyInjection\Xenox.Query.Handler.Provider.DependencyInjection.csproj", "{0BCA6042-FF16-4A76-AAE1-4651DEAAE6FF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xenox.Command.Messaging.Processor.Host", "src\Xenox.Command.Messaging.Processor.Host\Xenox.Command.Messaging.Processor.Host.csproj", "{ABE0A87F-3B0E-4746-BE33-9FBE0398493C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -105,10 +119,6 @@ Global
 		{A50526EA-A48A-4AC9-AB70-45A47D630FE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A50526EA-A48A-4AC9-AB70-45A47D630FE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A50526EA-A48A-4AC9-AB70-45A47D630FE6}.Release|Any CPU.Build.0 = Release|Any CPU
-		{0729CD9B-B00F-4DED-BF22-6D00A62089F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0729CD9B-B00F-4DED-BF22-6D00A62089F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0729CD9B-B00F-4DED-BF22-6D00A62089F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0729CD9B-B00F-4DED-BF22-6D00A62089F8}.Release|Any CPU.Build.0 = Release|Any CPU
 		{6C864B3D-4555-44EE-AB63-FBBE80B341DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{6C864B3D-4555-44EE-AB63-FBBE80B341DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6C864B3D-4555-44EE-AB63-FBBE80B341DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -121,10 +131,6 @@ Global
 		{294FC447-004A-4B56-A9BC-C43745A28245}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{294FC447-004A-4B56-A9BC-C43745A28245}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{294FC447-004A-4B56-A9BC-C43745A28245}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C0AD9C99-048A-41EC-8004-63F7F5B56094}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C0AD9C99-048A-41EC-8004-63F7F5B56094}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C0AD9C99-048A-41EC-8004-63F7F5B56094}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C0AD9C99-048A-41EC-8004-63F7F5B56094}.Release|Any CPU.Build.0 = Release|Any CPU
 		{47F0F0E2-2FC0-4363-9664-4E4D4166030E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{47F0F0E2-2FC0-4363-9664-4E4D4166030E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{47F0F0E2-2FC0-4363-9664-4E4D4166030E}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -141,10 +147,6 @@ Global
 		{3A419984-EC16-48AF-806B-65322CD11F10}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3A419984-EC16-48AF-806B-65322CD11F10}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3A419984-EC16-48AF-806B-65322CD11F10}.Release|Any CPU.Build.0 = Release|Any CPU
-		{711A2B21-8638-4802-BD90-A9FD3FA7A7D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{711A2B21-8638-4802-BD90-A9FD3FA7A7D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{711A2B21-8638-4802-BD90-A9FD3FA7A7D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{711A2B21-8638-4802-BD90-A9FD3FA7A7D7}.Release|Any CPU.Build.0 = Release|Any CPU
 		{65FA55A9-0D33-46F7-87B5-9906838AB591}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{65FA55A9-0D33-46F7-87B5-9906838AB591}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{65FA55A9-0D33-46F7-87B5-9906838AB591}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -157,10 +159,6 @@ Global
 		{1E8704D0-A631-48F7-BE45-D237F2B8DB6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1E8704D0-A631-48F7-BE45-D237F2B8DB6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1E8704D0-A631-48F7-BE45-D237F2B8DB6C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{145B66E4-643F-4392-BAE8-9DECD693542D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{145B66E4-643F-4392-BAE8-9DECD693542D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{145B66E4-643F-4392-BAE8-9DECD693542D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{145B66E4-643F-4392-BAE8-9DECD693542D}.Release|Any CPU.Build.0 = Release|Any CPU
 		{737A01F5-75EC-4AB1-9846-D4AB6950C996}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{737A01F5-75EC-4AB1-9846-D4AB6950C996}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{737A01F5-75EC-4AB1-9846-D4AB6950C996}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -177,6 +175,50 @@ Global
 		{472912B3-9D35-4886-BFD3-50B7FD9086D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{472912B3-9D35-4886-BFD3-50B7FD9086D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{472912B3-9D35-4886-BFD3-50B7FD9086D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{14E61E51-337F-4547-A71A-50ADCB879DCE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14E61E51-337F-4547-A71A-50ADCB879DCE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14E61E51-337F-4547-A71A-50ADCB879DCE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14E61E51-337F-4547-A71A-50ADCB879DCE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8478B7F9-F6B3-4D1D-BAAC-7BEB5A230FD2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8478B7F9-F6B3-4D1D-BAAC-7BEB5A230FD2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8478B7F9-F6B3-4D1D-BAAC-7BEB5A230FD2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8478B7F9-F6B3-4D1D-BAAC-7BEB5A230FD2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{66B48A1B-43F8-48E7-A43C-054402A28EA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66B48A1B-43F8-48E7-A43C-054402A28EA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66B48A1B-43F8-48E7-A43C-054402A28EA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66B48A1B-43F8-48E7-A43C-054402A28EA3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5A2C3327-CC3F-4099-87A1-4C107504A997}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A2C3327-CC3F-4099-87A1-4C107504A997}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A2C3327-CC3F-4099-87A1-4C107504A997}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A2C3327-CC3F-4099-87A1-4C107504A997}.Release|Any CPU.Build.0 = Release|Any CPU
+		{84C9972B-BC94-461B-8BE9-E10954335123}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84C9972B-BC94-461B-8BE9-E10954335123}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84C9972B-BC94-461B-8BE9-E10954335123}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84C9972B-BC94-461B-8BE9-E10954335123}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D0D1AA48-4571-4092-B853-35055AEAEDB3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0D1AA48-4571-4092-B853-35055AEAEDB3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0D1AA48-4571-4092-B853-35055AEAEDB3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0D1AA48-4571-4092-B853-35055AEAEDB3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C0D149C9-AA34-4C51-A87D-42A9BCCFD5D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0D149C9-AA34-4C51-A87D-42A9BCCFD5D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0D149C9-AA34-4C51-A87D-42A9BCCFD5D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0D149C9-AA34-4C51-A87D-42A9BCCFD5D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF69E5B2-DCDB-406B-A885-BC9704CC2406}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF69E5B2-DCDB-406B-A885-BC9704CC2406}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF69E5B2-DCDB-406B-A885-BC9704CC2406}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF69E5B2-DCDB-406B-A885-BC9704CC2406}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC533DAD-1CA9-4C7B-AEF3-780227E30ED0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC533DAD-1CA9-4C7B-AEF3-780227E30ED0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC533DAD-1CA9-4C7B-AEF3-780227E30ED0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC533DAD-1CA9-4C7B-AEF3-780227E30ED0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0BCA6042-FF16-4A76-AAE1-4651DEAAE6FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0BCA6042-FF16-4A76-AAE1-4651DEAAE6FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0BCA6042-FF16-4A76-AAE1-4651DEAAE6FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0BCA6042-FF16-4A76-AAE1-4651DEAAE6FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ABE0A87F-3B0E-4746-BE33-9FBE0398493C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ABE0A87F-3B0E-4746-BE33-9FBE0398493C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ABE0A87F-3B0E-4746-BE33-9FBE0398493C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ABE0A87F-3B0E-4746-BE33-9FBE0398493C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

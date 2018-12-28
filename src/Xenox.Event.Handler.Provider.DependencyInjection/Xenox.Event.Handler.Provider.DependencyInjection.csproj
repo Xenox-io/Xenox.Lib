@@ -10,4 +10,9 @@
     <Exec Command="xcopy /Y &quot;$(TargetDir)..\*.nupkg&quot; &quot;%USERPROFILE%\.nuget.local&quot;" />
   </Target>
 
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="2.2.0" />
+    <PackageReference Include="Xenox.Event.Handler.Provider" Version="1.0.0" />
+  </ItemGroup>
+
 </Project>

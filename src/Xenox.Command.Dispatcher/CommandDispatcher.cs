@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Threading.Tasks;
-using Xenox.Host.Providers;
+using Xenox.Command.Handler.Provider;
 
 namespace Xenox.Command.Dispatcher {
 	public class CommandDispatcher : ICommandDispatcher {

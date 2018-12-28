@@ -1,9 +1,7 @@
 ﻿using System;
 using Microsoft.Extensions.DependencyInjection;
-using Xenox.Query;
-using Xenox.Query.Handler;
 
-namespace Xenox.Host.Providers.DependencyInjection {
+namespace Xenox.Query.Handler.Provider.DependencyInjection {
 	public class QueryHandlerProvider : IQueryHandlerProvider {
 		private static readonly Type QueryHandlerOpenType = typeof(IQueryHandler<>);
 		private readonly IServiceProvider _serviceProvider;

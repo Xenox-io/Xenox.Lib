@@ -1,8 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Xenox.Messaging
-{
+namespace Xenox.Messaging {
 	public class Message : IMessage {
 		public string Id { get; private set; }
 		public object Body { get; private set; }

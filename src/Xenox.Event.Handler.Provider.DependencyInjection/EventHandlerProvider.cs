@@ -1,10 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using Microsoft.Extensions.DependencyInjection;
-using Xenox.Event;
-using Xenox.Event.Handler;
 
-namespace Xenox.Host.Providers.DependencyInjection {
+namespace Xenox.Event.Handler.Provider.DependencyInjection {
 	public class EventHandlerProvider : IEventHandlerProvider {
 		private static readonly Type EventHandlerOpenType = typeof(IEventHandler<>);
 		private readonly IServiceProvider _serviceProvider;

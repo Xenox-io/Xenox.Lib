@@ -1,8 +1,6 @@
 ﻿using System;
-using Xenox.Command;
-using Xenox.Command.Handler;
 
-namespace Xenox.Host.Providers {
+namespace Xenox.Command.Handler.Provider {
 	public interface ICommandHandlerProvider {
 		ICommandHandler<TCommand> GetCommandHandler<TCommand>() where TCommand : ICommand;
 		object GetCommandHandler(Type commandType);

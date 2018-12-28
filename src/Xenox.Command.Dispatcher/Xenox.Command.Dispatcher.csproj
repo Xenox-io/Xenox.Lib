@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp2.0</TargetFramework>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Version>1.0.3</Version>
+    <Version>1.0.4</Version>
   </PropertyGroup>
 
   <Target Name="CopyNuGetPackage" AfterTargets="Pack">
@@ -11,7 +11,7 @@
   </Target>
 
   <ItemGroup>
-    <PackageReference Include="Xenox.Host.Providers" Version="1.0.4" />
+    <PackageReference Include="Xenox.Command.Handler.Provider" Version="1.0.0" />
     <PackageReference Include="Xenox.Serialization.JsonNet" Version="1.0.6" />
   </ItemGroup>
 
