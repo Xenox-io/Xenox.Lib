@@ -12,7 +12,7 @@
   </ItemGroup>
 
   <Target Name="CopyNuGetPackage" AfterTargets="Pack">
-    <Exec Command="xcopy /Y &quot;$(TargetDir)..\*.nupkg&quot; &quot;%USERPROFILE%\.nuget.local&quot;" />
+    <Exec Command="xcopy /Y &quot;$(TargetDir)..\*.nupkg&quot; &quot;%USERPROFILE%\.nuget.xenox.local&quot;" />
   </Target>
 
 </Project>
