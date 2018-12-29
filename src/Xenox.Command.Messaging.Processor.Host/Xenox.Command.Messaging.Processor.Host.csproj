@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp2.0</TargetFramework>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Version>1.0.0</Version>
+    <Version>1.0.2</Version>
   </PropertyGroup>
 
   <Target Name="CopyNuGetPackage" AfterTargets="Pack">
@@ -12,7 +12,7 @@
 
   <ItemGroup>
     <PackageReference Include="Xenox.Command.Handler.Provider.DependencyInjection" Version="1.0.1" />
-    <PackageReference Include="Xenox.Command.Messaging.Processor" Version="1.0.0" />
+    <PackageReference Include="Xenox.Command.Messaging.Processor" Version="1.0.2" />
     <PackageReference Include="Xenox.DependencyInjection.Module" Version="1.0.1" />
     <PackageReference Include="Xenox.DependencyInjection.Reflection" Version="1.0.3" />
   </ItemGroup>
