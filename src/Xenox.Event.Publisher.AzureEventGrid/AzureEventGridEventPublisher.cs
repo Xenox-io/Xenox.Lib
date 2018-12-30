@@ -5,6 +5,7 @@ using System.Reflection;
 using System.Threading.Tasks;
 using Microsoft.Azure.EventGrid;
 using Microsoft.Azure.EventGrid.Models;
+using Newtonsoft.Json.Linq;
 
 namespace Xenox.Event.Publisher.AzureEventGrid {
 	public class AzureEventGridEventPublisher : IEventPublisher {
@@ -27,7 +28,7 @@ namespace Xenox.Event.Publisher.AzureEventGrid {
 				return new EventGridEvent() {
 					Id = eventId,
 					EventType = eventType.FullName,
-					Data = e,
+					Data = JObject.FromObject(e),
 					EventTime = DateTime.Now,
 					Subject = _configuration.Subject,
 					DataVersion = eventType.Assembly.GetName().Version.ToString()
