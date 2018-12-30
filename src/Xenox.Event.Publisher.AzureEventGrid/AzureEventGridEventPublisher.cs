@@ -20,7 +20,7 @@ namespace Xenox.Event.Publisher.AzureEventGrid {
 		public Task PublishAsync(IEnumerable<IEvent> events) {
 			List<EventGridEvent> eventGridEvents = events.Select(e => {
 				Type eventType = e.GetType();
-				PropertyInfo eventIdInfo = eventType.GetProperties().Where(p => p.Name.Equals("Id")).FirstOrDefault();
+				PropertyInfo eventIdInfo = eventType.GetProperties().FirstOrDefault(p => p.Name.Equals("Id"));
 				string eventId = ((eventIdInfo != null)
 					? eventIdInfo.GetValue(e).ToString()
 					: Guid.NewGuid().ToString()
