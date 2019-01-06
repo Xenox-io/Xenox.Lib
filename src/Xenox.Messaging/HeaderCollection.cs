@@ -51,7 +51,7 @@ namespace Xenox.Messaging {
 
 		public void AddHeaders(IEnumerable<KeyValuePair<string, string>> headers) {
 			foreach (KeyValuePair<string, string> header in headers) {
-				AddHeader(new Header(header));
+				AddHeader(new Header(header.Key, header.Value));
 			}
 		}
 	}

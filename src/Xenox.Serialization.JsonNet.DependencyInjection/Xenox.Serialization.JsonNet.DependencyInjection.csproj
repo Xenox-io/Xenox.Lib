@@ -8,7 +8,7 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="2.2.0" />
-    <PackageReference Include="Xenox.Serialization.JsonNet" Version="1.0.6" />
+    <PackageReference Include="Xenox.Serialization.JsonNet" Version="1.0.7" />
   </ItemGroup>
 
   <Target Name="CopyNuGetPackage" AfterTargets="Pack">

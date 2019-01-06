@@ -1,5 +1,4 @@
-﻿using Xenox.Command.Serialization;
-using Xenox.Messaging;
+﻿using Xenox.Messaging;
 using Xenox.Serialization;
 using Xenox.Type.Provider;
 
@@ -17,9 +16,9 @@ namespace Xenox.Command.Messaging.Serialization {
 		}
 
 		public ICommand DeserializeCommandFromMessage(Message message) {
-			SerializableCommand serializableCommand = _serializationService.DeserializeFromObject<SerializableCommand>(message.Body);
-			System.Type commandType = _typeProvider.GetType(serializableCommand.Name);
-			object command = _serializationService.DeserializeFromString(commandType, serializableCommand.Data);
+			CommandMessageBody commandMessageBody = _serializationService.DeserializeFromObject<CommandMessageBody>(message.Body);
+			System.Type commandType = _typeProvider.GetType(commandMessageBody.CommandName);
+			object command = _serializationService.DeserializeFromObject(commandType, commandMessageBody.Command);
 			return command as ICommand;
 		}
 	}

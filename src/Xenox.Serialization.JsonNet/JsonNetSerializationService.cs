@@ -11,7 +11,8 @@ namespace Xenox.Serialization.JsonNet {
 
 		public JsonNetSerializationService() {
 			_settings = new JsonSerializerSettings() {
-				ContractResolver = new JsonNetPrivateSetterContractResolver()
+				ContractResolver = new JsonNetPrivateSetterContractResolver(),
+				ConstructorHandling = ConstructorHandling.AllowNonPublicDefaultConstructor
 			};
 		}
 
